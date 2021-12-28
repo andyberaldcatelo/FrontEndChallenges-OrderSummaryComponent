@@ -14,16 +14,6 @@
 
     <title>Frontend Mentor | Order summary card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!--     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -42,26 +32,37 @@
               alt="Hero Illustration"
             />
           </div>
-          <div class="ParagraphSection">
-            <div class="TitleContainer"><p class="Title">Order Summary</p></div>
+          <div class="TextSection">
+            <div class="TitleContainer">
+              <h1 class="Title">Order Summary</h1>
+            </div>
             <div class="ParagraphContainer">
               <p class="Paragraph">
                 You can now listen to millions of songs, audiobooks, and
                 podcasts on any device anywhere you like!
               </p>
             </div>
-            <div class="ProductSelection">
-              <div class="NoteIcon"><img src="images/icon-music.svg" /></div>
-              <div class="PlanData">
-                <p class="PlanName">Annual Plan</p>
-                <p class="PlanPrice">$59.99/year</p>
-              </div>
-              <div><a class="ChangeLink">Change</a></div>
+          </div>
+
+          <div class="ProductSelection">
+            <div class="Left">
+              <img
+                class="NoteIcon"
+                src="images/icon-music.svg"
+                alt="Music Icon"
+              />
             </div>
-            <div class="Buttons">
-              <button class="Pay">Proceed to Payment</button>
-              <button class="Cancel">Cancel Order</button>
+            <div class="Center">
+              <p class="PlanName">Annual Plan</p>
+              <p class="PlanPrice">$59.99/year</p>
             </div>
+            <div class="Right">
+              <a class="ChangeLink">Change</a>
+            </div>
+          </div>
+          <div class="Buttons">
+            <button class="Pay">Proceed to Payment</button>
+            <button class="Cancel">Cancel Order</button>
           </div>
         </div>
       </div>

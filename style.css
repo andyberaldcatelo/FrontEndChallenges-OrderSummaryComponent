@@ -6,7 +6,7 @@
 .Background {
   font-family: RedHat;
   color: #97a0bf;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .BackgourndPattern {
@@ -23,8 +23,8 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   margin: 0 auto;
-  height: fit-content;
-  width: 280px;
+  height: 750px;
+  width: 470px;
   border-radius: 15px;
   text-align: center;
   background-color: #ffffff;
@@ -36,27 +36,32 @@
 }
 
 .HeroImage {
-  max-width: 100%;
+  width: 100%;
   border-radius: inherit;
 }
 
-.ParagraphSection {
-  padding: 18px;
+.TextSection {
+  margin-top: 30px;
 }
 
 .Title {
   margin: 0;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 35px;
   color: #000000;
 }
 
+.ParagraphContainer {
+  padding: 0 35px;
+}
+
 .ProductSelection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px 0;
-  padding: 2px;
+  display: grid;
+  grid-template-columns: 24% 46% 30%;
+  grid-auto-rows: minmax(10px, auto);
+  margin: 50px 45px;
+  height: 60px;
+  padding: 10px;
 }
 
 .ProductSelection:hover {
@@ -64,28 +69,41 @@
   border-radius: 5px;
 }
 
-.PlanData {
-  text-align: left;
+.Left {
+  grid-column: 1;
 }
 
 .NoteIcon {
-  margin: 2px 0 0 0;
+  height: 100%;
+}
+
+.Center {
+  grid-column: 2;
 }
 
 .PlanName {
-  font-weight: bold;
+  text-align: left;
+  font-weight: bolder;
   color: #000000;
   margin: 0;
 }
 
 .PlanPrice {
+  text-align: left;
   margin: 0;
+}
+
+.Right {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
 }
 
 .ChangeLink {
   text-decoration: underline;
   color: #382ae1;
   font-weight: bold;
+  margin: auto;
 }
 
 a:hover {
@@ -94,11 +112,16 @@ a:hover {
   color: #392ae17b;
 }
 
+.Buttons {
+  margin-top: 40px;
+}
+
 .Pay {
+  font-size: 20px;
   margin: 4px 0;
-  width: 90%;
-  height: 30px;
-  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
   color: #ffffff;
   background-color: #382ae1;
   border: none;
@@ -111,11 +134,12 @@ a:hover {
 }
 
 .Cancel {
+  font-size: 20px;
   background-color: #ffffff;
   margin: 4px 0;
-  width: 90%;
-  height: 30px;
-  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
   font-weight: bold;
   border: none;
   color: #97a0bf;
