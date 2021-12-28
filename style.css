@@ -1,0 +1,128 @@
+@font-face {
+  font-family: RedHat;
+  src: url(fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+.Background {
+  font-family: RedHat;
+  color: #97a0bf;
+  font-size: 16px;
+}
+
+.BackgourndPattern {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.CardContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 0 auto;
+  height: fit-content;
+  width: 280px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px rgba(198, 198, 211, 0.6);
+}
+
+.ImageContainer {
+  border-radius: 15px 15px 0 0;
+}
+
+.HeroImage {
+  max-width: 100%;
+  border-radius: inherit;
+}
+
+.ParagraphSection {
+  padding: 18px;
+}
+
+.Title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}
+
+.ProductSelection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 2px;
+}
+
+.ProductSelection:hover {
+  background-color: #d9dadf6d;
+  border-radius: 5px;
+}
+
+.PlanData {
+  text-align: left;
+}
+
+.NoteIcon {
+  margin: 2px 0 0 0;
+}
+
+.PlanName {
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.PlanPrice {
+  margin: 0;
+}
+
+.ChangeLink {
+  text-decoration: underline;
+  color: #382ae1;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  pointer-events: auto;
+  color: #392ae17b;
+}
+
+.Pay {
+  margin: 4px 0;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #382ae1;
+  border: none;
+  box-shadow: 0px 5px 2px 0px rgba(198, 198, 211, 0.6);
+}
+
+.Pay:hover {
+  cursor: pointer;
+  background-color: #392ae1b1;
+}
+
+.Cancel {
+  background-color: #ffffff;
+  margin: 4px 0;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  color: #97a0bf;
+}
+
+.Cancel:hover {
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+}
